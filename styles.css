@@ -155,3 +155,7 @@ html body {
   font-size: 20px;
   color: #a2a3ae;
 }
+
+a:hover {
+	background: rgb(83, 103, 172);
+}
