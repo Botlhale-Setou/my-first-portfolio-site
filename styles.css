@@ -10,6 +10,10 @@ html body {
   height: 5415px;
   background: #191765;
   padding-top: 44px;
+  z-index: -2;
+  background-image: url('media/shapes2.png');
+  background-repeat: no-repeat;
+  background-position: 0% 1150%;
 }
 
 .header {
@@ -276,9 +280,6 @@ a:hover {
   background: rgb(69, 155, 231);
 }
 
-.bg {
-  position: absolute;
-  width: inherit;
-  top: 1500px;
-  opacity: 0.3;
+.btn-see:active {
+  background: #5e42d7;
 }
