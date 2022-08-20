@@ -7,9 +7,13 @@ html body {
   display: flex;
   flex-direction: column;
   width: 375px;
-  height: 5415px;
   background: #191765;
   padding-top: 44px;
+  z-index: -2;
+  background-image: url('./media/shapes2.png');
+  background-repeat: no-repeat;
+  background-size: 375px 2617px;
+  background-position: 0 1370px;
 }
 
 .header {
@@ -65,8 +69,8 @@ html body {
 .headline {
   display: flex;
   flex-direction: column;
-  height: 1316.15px;
-  background-image: url("media/top-circles.png");
+  background-image: url("./media/top-circles.png");
+  margin-bottom: 20px;
 }
 
 .headline-head {
@@ -113,10 +117,9 @@ html body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
   gap: 70px;
-  row-gap: 5px;
+  padding-left: 20px;
+  row-gap: 25px;
   margin-top: 20px;
   margin-bottom: 15px;
 }
@@ -177,10 +180,106 @@ a:hover {
   list-style-type: none;
   align-items: center;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .ul-skills {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.work {
+  margin-left: 24px;
+  margin-right: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-header-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #9490ff;
+  margin-bottom: 25px;
+}
+
+.entry-container {
+  display: grid;
+  margin-top: 30px;
+  row-gap: 15px;
+}
+
+.entry {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  margin-bottom: 23px;
+}
+
+.img-holder {
+  width: inherit;
+  height: 236px;
+  background: #c8c8d4;
+  margin-bottom: 23px;
+}
+
+.entry-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+}
+
+.entry-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #dcdce8;
+  line-height: 28px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.entry-category {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+.btn-see {
+  grid-area: 2/1/span 1/span 1;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  background: #7d73fc;
+  border: none;
+  width: 89px;
+  height: 48px;
+  z-index: 1;
+  color: #edecff;
+}
+
+.btn-see-holder {
+  display: grid;
+  grid-template: 20px 48px/ 89px 100%;
+}
+
+.btn-see:hover {
+  background: #9b94fd;
+}
+
+.btn-see:active {
+  background: #5e42d7;
 }
