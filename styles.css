@@ -213,6 +213,7 @@ a:hover {
   display: flex;
   height: auto;
   flex-direction: column;
+  margin-bottom: 23px;
 }
 
 .img-holder {
@@ -249,6 +250,7 @@ a:hover {
   font-size: 15px;
   margin: 0;
   padding: 0;
+  color: #fff;
 }
 
 .btn-see {
@@ -262,6 +264,7 @@ a:hover {
   width: 89px;
   height: 48px;
   z-index: 1;
+  color: #edecff;
 }
 
 .btn-see-holder {
