@@ -331,6 +331,7 @@ a:hover {
 #msg {
   width: 319px;
   height: 148px;
+  font-family: 'Inter', sans-serif;
 }
 
 .inter-font {
@@ -363,7 +364,7 @@ a:hover {
 }
 
 .myemail {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
