@@ -353,3 +353,29 @@ a:hover {
   font-weight: 500;
   font-size: 12px;
 }
+
+.social-media-2 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.myemail {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ebebff;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+#btnaubmit:active {
+  background: #5e42d7;
+}
+
+#btnsubmit:hover {
+  background: #9b94fd;
+}
