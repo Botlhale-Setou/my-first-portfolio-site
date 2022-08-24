@@ -382,10 +382,13 @@ a:hover {
 #btnsubmit:hover {
   background: #9b94fd;
 }
+.d {
+  display: none;
+}
 }
 
 /* -------------------- START OF DESKTOP VERSION -------------------- */
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 768px){
 
   html body {
     margin: 0;
@@ -492,6 +495,141 @@ a:hover {
 
   .headline {
     margin: 0 142px 0 142px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
+  .headline-head {
+    margin-top: 114px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .primary-text {
+    color: #9390ff;
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: -10px;
+  }
+  
+  .supporting-text {
+    color: #dfe1e6;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .headline-body {
+    width: 446px;
+    margin-left: 496px;
+    margin-right: 496px;
+    margin-top: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 20px;
+    text-align: center;
+    color: #c8c8d4;
+    margin-bottom: 33px;    
+  }
+
+  .skillset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+    row-gap: 25px;
+    margin-top: 32px;
+    margin-bottom: 41px;
+  }
+
+  .ss1 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #9390ff;
+    margin-bottom: 10px;
+  }
+  
+  .ss2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #f5f5ff;
+    line-height: 24px;
+  }
+
+  .ul-skills {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .m {
+    display: none;
+  }  
+
+  .headline-footer {
+    margin-top: 96px;
+    width: 71vw;
+  }
+
+  .ul-socials {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .d-elem-left {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .d-elem-right {
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .l {
+    margin-right: 12px;
+  }
+
+  .r {
+    margin-left: 12px;
+  }
+
+  .work-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #b3bac5;
+  }
+
+  a:hover {
+    background: rgb(83, 103, 172);
+  }
 }
