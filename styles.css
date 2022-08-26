@@ -740,6 +740,7 @@
     display: flex;
     list-style-type: none;
     justify-content: space-around;
+    align-items: center;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -814,7 +815,7 @@
 
   .form-ul {
     list-style-type: none;
-    padding: 0;
+    padding: 0 0 0 10px;
   }
 
   .form-ul input {
@@ -890,5 +891,11 @@
 
   .endline {
     width: 95vw;
+  }
+
+  .pholder-pos::placeholder {
+    margin-left: 16px;
+    left: 10px;
+    text-indent: 15px;
   }
 }
