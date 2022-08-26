@@ -423,6 +423,11 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('./media/d-bg1.png'), url('./media/d-bg2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: 95%, 100%;
+    background-position-y: 210px, 1445px;
+    background-position-x: 20px, 0px;
   }
 
   .header {
