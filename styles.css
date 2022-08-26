@@ -493,7 +493,7 @@
   .d-item-nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .d-item-nav div {
@@ -512,25 +512,43 @@
     padding-bottom: 11px;
     width: 40px;
     height: 40px;
+    animation: testing 1s 4 alternate;
+  }
+
+  @keyframes testing {
+    from {
+      transform: none;
+    }
+
+    to {
+      transform: rotate(180deg);
+    }
   }
 
   .d-mailicon-holder:hover {
     background: #9b94fd;
   }
 
+  .test-trans {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.3s;
+    transition-property: all;
+  }
+
+  .test-trans:hover {
+    background: #9b94fd;
+  }
+
   .d-nav-group {
     float: right;
     display: flex;
-    right: 0;
   }
 
-  a:hover {
-    background: rgb(83, 103, 172);
-  }
-
-  .text-hover a:hover {
+  /* .text-hover a:hover {
     background: #9b94fd;
-  }
+  } */
 
   .no-hlink {
     text-decoration: none;
