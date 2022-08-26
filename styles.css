@@ -404,6 +404,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .header {
@@ -528,8 +529,6 @@ a:hover {
 
   .headline-body {
     width: 446px;
-    margin-left: 35vw;
-    margin-right: 35vw;
     margin-top: 88px;
     display: flex;
     flex-direction: column;
@@ -544,7 +543,7 @@ a:hover {
     font-size: 20px;
     text-align: center;
     color: #c8c8d4;
-    margin-bottom: 33px;    
+    margin-bottom: 50px;    
   }
 
   .skillset {
@@ -663,16 +662,17 @@ a:hover {
   }
 
   .entry {
-    /* display: flex; */
-    height: auto;
+    margin-top: 20px;
     margin-bottom: 88px;
+    align-items: center;
+    justify-content: center;
   }
 
   .img-holder {
+    border: 1px solid green;
+    width: 50%;
     height: 100%;
-    width: 684px;
     background: #c8c8d4;
-    margin-bottom: 23px;
   }
 
   .entry-data {
@@ -795,6 +795,10 @@ a:hover {
     margin-bottom: 60px;
   }
 
+  #msg::placeholder {
+    font-family: 'Inter', sans-serif;
+  }
+
   .submit-btn {
     display: flex;
     justify-content: center;
@@ -836,5 +840,13 @@ a:hover {
   
   #btnsubmit:hover {
     background: #9b94fd;
+  }
+
+  .scalable {
+    width: 80vw;
+  }
+
+  .endline {
+    width: 95vw;
   }
 }

@@ -112,9 +112,10 @@
 
     <section class="work">
       <header class="work-header">
-        <p class="work-header-title">MY RECENT WORK</p>
+        <p class="work-header-title m">MY RECENT WORK</p>
+        <p class="work-header-title d">My recent work</p>
         <img class="work-divider m" src="./media/Divider.png" alt="A content divider">
-        <img class="work-divider d" src="./media/d-longhline.png" alt="A content divider">
+        <img class="work-divider d scalable" src="./media/d-longhline.png" alt="A content divider">
       </header>
 
       <div class="entry-container">
@@ -143,7 +144,7 @@
         </div>
 
         <div class="entry">
-          <div class="img-holder to-right"><img class="entry-img" src="#" alt="Recent work snapshot"></div>
+          <div class="img-holder to-right reverse"><img class="entry-img" src="#" alt="Recent work snapshot"></div>
           <section class="entry-data to-left">
             <p class="entry-title">Multi-Post Stories</p>
             <p class="entry-text">A daily selection of privately personalized reads; 
@@ -212,8 +213,11 @@
     <footer class="form-footer">
       <form action="#" method="post">
         <div>
-          <h2 class="contact-title">
+          <h2 class="contact-title m">
             CONTACT US
+          </h2>
+          <h2 class="contact-title d">
+            Let's chat!
           </h2>
           <p class="contact-desc">
             If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
@@ -224,17 +228,20 @@
             <input type="text" id="name" placeholder="Enter your name:" name="user_name">
           </li>
           <li class="li-form inter-font">
-            <input type="email" id="mail" placeholder="someone@example.com" name="user_email">
+            <input type="email" id="mail" placeholder="Enter your email:" name="user_email">
           </li>
           <li class="li-form inter-font">
             <textarea id="msg" placeholder="Enter text here:" name="user_msg"></textarea>
           </li>
           <li class="submit-btn">
-            <button id="btnsubmit" type="submit">Send Message</button>
+            <button id="btnsubmit" type="submit">
+              <p class="m">Send Message</p>
+              <p class="d">Send</p>
+            </button>
           </li>
         </ul>
       </form>
-      <img class="divider d" src="./media/d-horizonline.png" alt="A content divider">
+      <img class="d endline" src="./media/d-xxlhline.png" alt="A content divider">
 
       <div class="social-media-2">
         <ul class="ul-socials">
