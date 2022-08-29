@@ -8,6 +8,9 @@ My portfolio project: setup and mobile-first
 - VS Code
 - Figma (template design 4)
 
+# Live Demo
+[Click here](https://botlhale-setou.github.io/) to view live demo.
+
 # Getting Started
 This is a basic software developer portfolio (continuously under construction).
 It showcases the author's understanding of Flexbox, Semantic HTML, :hover, Git & GitHub, etc.
