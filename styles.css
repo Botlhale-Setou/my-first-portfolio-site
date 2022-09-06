@@ -25,7 +25,7 @@
   }
 
   .change .bar2 {
-    transform:  scale(3);
+    transform: scale(3);
     opacity: 0;
   }
 
@@ -97,11 +97,10 @@
 
   .test-trans {
     margin: 16px;
-  }  
+  }
 
   .nav_ul:active {
     left: 0;
-
   }
 
   .work-divider {
