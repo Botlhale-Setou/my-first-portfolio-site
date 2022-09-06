@@ -14,29 +14,44 @@
       <div class="logo-placeholder">
         <a href="#" class="logo-text">Botlhale Setou</a>
       </div>
-      <div class="normal-button">
-        <button type="button" class="btnMenu"><img class="menu-icon" src="./media/menu-icon.png" alt="Menu button"></button>
+
+      <ul class="menu-nav">
+        <li class="list-menu folioport">
+          <a href="#portfolio-sec" class="link-list">Portfolio</a>
+        </li>
+        <li class="list-menu bouta">
+          <a href="#" class="link-list">About</a>
+        </li>
+        <li class="list-menu tactcon">
+          <a href="#contact-sec" class="link-list">Contact</a>
+        </li>
+      </ul>
+
+      <div class="hamburger m" onclick="myFunction(this)">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar3"></span>
       </div>
+      
+      
+      <!-- <div class="d-nav-grou">  
+        <ul id="nav_ul" class="d-item-na font-robot weight-50 color-whit text-hove">
+          <li class="test-trans">
+            <a href="#" id="nav_portfolio" class="no-hlink color-white d">Portfolio</a>
+          </li>
+          <li class="test-trans">
+            <a href="#" id="nav_about" class="no-hlink color-white d">About</a>
+          </li>
+          <li class="test-trans">
+            <a href="#" id="nav_contact" class="no-hlink color-white d">Contact</a>
+          </li>
+        </ul>
 
-      <div class="d-nav-group d">  
-        <div class="d-item-nav font-roboto weight-500 color-white text-hover">
-          <div class="test-trans">
-            <a href="#" class="no-hlink color-white d">Portfolio</a>
-          </div>
-          <div class="test-trans">
-            <a href="#" class="no-hlink color-white d">About</a>
-          </div>
-          <div class="test-trans">
-          <a href="#" class="no-hlink color-white d">Contact</a>
-          </div>
-
-        </div>
         <div class="d-mailicon-holder d">
           <img class="mail-icon" src="./media/mail-icon.png" alt="Mailbox icon">
         </div>
-        
-      </div>
-      
+
+      </div> -->
     </nav>
 
     <section class="headline">
@@ -113,7 +128,7 @@
       </div>
     </section>
 
-    <section class="work">
+    <section id="portfolio-sec" class="work">
       <header class="work-header">
         <h2 class="work-header-title m">MY RECENT WORK</h2>
         <h2 class="work-header-title d">My recent work</h2>
@@ -216,7 +231,7 @@
     <footer class="form-footer">
       <form action="#" method="post">
         <div>
-          <h2 class="contact-title m">
+          <h2 id="contact-sec" class="contact-title m">
             CONTACT US
           </h2>
           <h2 class="contact-title d">
@@ -257,5 +272,6 @@
       </div>
     </footer>
   </div>
+  <script src="./scripts.js"></script>
 </body>
 </html>

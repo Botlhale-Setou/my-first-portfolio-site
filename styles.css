@@ -19,6 +19,91 @@
     background-position-y: 30px, 1600px;
   }
 
+  .hamburger {
+    cursor: pointer;
+    margin-right: 10vw;
+  }
+
+  .change .bar2 {
+    transform:  scale(3);
+    opacity: 0;
+  }
+
+  .change .bar1 {
+    transform: translateY(8px) rotate(405deg);
+  }
+
+  .change .bar3 {
+    transform: translateY(-8px) rotate(-405deg);
+  }
+
+  .bang {
+    overflow: hidden;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #acb7c3;
+    transition: 0.5s ease;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .list-menu > a {
+    text-decoration: none;
+    color: #edecff;
+  }
+
+  .menu-nav {
+    position: fixed;
+    top: 55px;
+    height: 100%;
+    left: -110vw;
+    gap: 0;
+    flex-direction: column;
+    background-color: #191765;
+    width: 100vw;
+    transition: 400ms ease-in-out;
+    text-align: left;
+    z-index: 10;
+    opacity: 0;
+  }
+
+  .boom {
+    left: 0;
+    opacity: 100%;
+  }
+
+  .list-menu {
+    margin: 50px 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+  }
+
+  .menu-nav:active {
+    left: 0;
+  }
+
+  .test-trans {
+    margin: 16px;
+  }  
+
+  .nav_ul:active {
+    left: 0;
+
+  }
+
   .work-divider {
     width: 99%;
     height: 10px;
@@ -38,7 +123,7 @@
     justify-content: center;
     width: 105px;
     height: 36px;
-    padding-left: 12px;
+    padding-left: 10vw;
   }
 
   .logo-text {
@@ -49,6 +134,7 @@
     text-align: center;
     color: white;
     text-decoration: none;
+    transition: 250ms ease-in-out;
   }
 
   .normal-button {
@@ -441,7 +527,7 @@
     background-image: url('./media/d-bg1.png'), url('./media/d-bg2.png');
     background-repeat: no-repeat, no-repeat;
     background-size: 95%, 100%;
-    background-position-y: 210px, 1445px;
+    background-position-y: 250px, 1445px;
     background-position-x: 20px, 0;
   }
 
@@ -545,10 +631,6 @@
     float: right;
     display: flex;
   }
-
-  /* .text-hover a:hover {
-    background: #9b94fd;
-  } */
 
   .no-hlink {
     text-decoration: none;
