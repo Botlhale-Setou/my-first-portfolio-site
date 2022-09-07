@@ -56,18 +56,23 @@
 
   ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
+
+  
 
   .list-menu > a {
     text-decoration: none;
     color: #edecff;
+    margin-left: 8vw;
   }
 
   .menu-nav {
     position: fixed;
     top: 55px;
     height: 100%;
-    left: -110vw;
+    left: -100vw;
     gap: 0;
     flex-direction: column;
     background-color: #191765;
@@ -75,7 +80,14 @@
     transition: 400ms ease-in-out;
     text-align: left;
     z-index: 10;
-    opacity: 0;
+  }
+
+  .bg-menu {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    z-index: -20;
   }
 
   .boom {
@@ -89,6 +101,15 @@
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .right_arrow {
+    color: white;
+    margin-right: 13vw;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .menu-nav:active {
