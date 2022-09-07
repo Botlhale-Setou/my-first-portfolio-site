@@ -10,6 +10,7 @@ const btnsee2 = document.querySelector('#btnsee2');
 const btnsee3 = document.querySelector('#btnsee3');
 const btnsee4 = document.querySelector('#btnsee4');
 const detailsCon = document.querySelector('.details-container');
+const close = document.querySelector('.btnexit');
 
 const modalContent = {
   name: 'Multi-Post Stories',
@@ -45,58 +46,62 @@ detailsCon.innerHTML = `
 `;
 
 function myFunction(x) {
-  x.classList.toggle("change");
+  x.classList.toggle('change');
 }
 
 function closePopup() {
   detailsCon.style.display = 'none';
-  body.classList.toggle("bang");
+  body.classList.toggle('bang');
 }
 
-btnsee1.addEventListener("click", () => {
+btnsee1.addEventListener('click', () => {
   detailsCon.style.display = 'flex';
-  body.classList.toggle("bang");
+  body.classList.toggle('bang');
 });
 
-btnsee2.addEventListener("click", () => {
+btnsee2.addEventListener('click', () => {
   detailsCon.style.display = 'flex';
-  body.classList.toggle("bang");
+  body.classList.toggle('bang');
 });
 
-btnsee3.addEventListener("click", () => {
+btnsee3.addEventListener('click', () => {
   detailsCon.style.display = 'flex';
-  body.classList.toggle("bang");
+  body.classList.toggle('bang');
 });
 
-btnsee4.addEventListener("click", () => {
+btnsee4.addEventListener('click', () => {
   detailsCon.style.display = 'flex';
-  body.classList.toggle("bang");
+  body.classList.toggle('bang');
 });
 
-hamburger.addEventListener("click", () => {
-  body.classList.toggle("bang");
-  navMenu.classList.toggle("boom");
-  logo.classList.toggle("invisible");
+hamburger.addEventListener('click', () => {
+  body.classList.toggle('bang');
+  navMenu.classList.toggle('boom');
+  logo.classList.toggle('invisible');
   myFunction(hamburger);
 });
 
-portfolio.addEventListener("click", () => {
-  navMenu.classList.toggle("boom");
-  body.classList.toggle("bang");
-  logo.classList.toggle("invisible");
-  hamburger.classList.toggle("change");
+portfolio.addEventListener('click', () => {
+  navMenu.classList.toggle('boom');
+  body.classList.toggle('bang');
+  logo.classList.toggle('invisible');
+  hamburger.classList.toggle('change');
 });
 
-about.addEventListener("click", () => {
-  navMenu.classList.toggle("boom");
-  body.classList.toggle("bang");
-  logo.classList.toggle("invisible");
-  hamburger.classList.toggle("change");
+about.addEventListener('click', () => {
+  navMenu.classList.toggle('boom');
+  body.classList.toggle('bang');
+  logo.classList.toggle('invisible');
+  hamburger.classList.toggle('change');
 });
 
-contact.addEventListener("click", () => {
-  navMenu.classList.toggle("boom");
-  body.classList.toggle("bang");
-  logo.classList.toggle("invisible");
-  hamburger.classList.toggle("change");
+contact.addEventListener('click', () => {
+  navMenu.classList.toggle('boom');
+  body.classList.toggle('bang');
+  logo.classList.toggle('invisible');
+  hamburger.classList.toggle('change');
+});
+
+close.addEventListener('click', () => {
+  closePopup();
 });
