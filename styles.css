@@ -606,6 +606,13 @@
     font-size: 12px;
   }
 
+  #err {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+
   .social-media-2 {
     margin-top: 15px;
     display: flex;

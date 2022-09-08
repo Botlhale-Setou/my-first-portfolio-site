@@ -11,6 +11,11 @@ const btnsee3 = document.querySelector('#btnsee3');
 const btnsee4 = document.querySelector('#btnsee4');
 const detailsCon = document.querySelector('.details-container');
 const close = document.querySelector('.btnexit');
+const contactForm = document.forms[0];
+const inpName = contactForm.elements['name'];
+const inpMail = contactForm.elements['mail'];
+const txtMsg = contactForm.elements['msg'];
+const liErr = document.querySelector('#err');
 
 const modalContent = {
   name: 'Multi-Post Stories',
@@ -53,6 +58,23 @@ function closePopup() {
   detailsCon.style.display = 'none';
   body.classList.toggle('bang');
 }
+function isLowerCase(str) {
+  return str === str.toLowerCase() && str !== str.toUpperCase();
+}
+
+contactForm.addEventListener('submit', (event) => {
+  const mail = inpMail.value;
+
+  if (isLowerCase(mail) === false) {
+    event.preventDefault();
+    event.stopPropagation();
+    liErr.innerHTML = 'Please ensure your email is all lowercase.';
+  } else {
+    // contactForm.submit();
+    console.log('valid');
+    liErr.innerHTML = 'Submitted successfully.';
+  }
+});
 
 btnsee1.addEventListener('click', () => {
   detailsCon.style.display = 'flex';
@@ -102,6 +124,6 @@ contact.addEventListener('click', () => {
   hamburger.classList.toggle('change');
 });
 
-close.addEventListener('click', () => {
-  closePopup();
-});
+// close.addEventListener('click', () => {
+//   closePopup();
+// });
