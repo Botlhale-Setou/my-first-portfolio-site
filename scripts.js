@@ -12,9 +12,7 @@ const btnsee4 = document.querySelector('#btnsee4');
 const detailsCon = document.querySelector('.details-container');
 const close = document.querySelector('.btnexit');
 const contactForm = document.forms[0];
-const inpName = contactForm.elements['name'];
-const inpMail = contactForm.elements['mail'];
-const txtMsg = contactForm.elements['msg'];
+const inpMail = document.querySelector('#mail');
 const liErr = document.querySelector('#err');
 
 const modalContent = {
@@ -70,8 +68,7 @@ contactForm.addEventListener('submit', (event) => {
     event.stopPropagation();
     liErr.innerHTML = 'Please ensure your email is all lowercase.';
   } else {
-    // contactForm.submit();
-    console.log('valid');
+    contactForm.submit();
     liErr.innerHTML = 'Submitted successfully.';
   }
 });
@@ -124,6 +121,6 @@ contact.addEventListener('click', () => {
   hamburger.classList.toggle('change');
 });
 
-// close.addEventListener('click', () => {
-//   closePopup();
-// });
+close.addEventListener('click', () => {
+  closePopup();
+});
