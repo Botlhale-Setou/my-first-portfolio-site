@@ -606,6 +606,13 @@
     font-size: 12px;
   }
 
+  #err {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: red;
+  }
+
   .social-media-2 {
     margin-top: 15px;
     display: flex;
@@ -650,6 +657,13 @@
     margin: 0;
     padding: 0;
     background-color: #191765;
+  }
+
+  #err {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: red;
   }
 
   .screen {
