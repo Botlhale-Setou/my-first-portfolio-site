@@ -63,13 +63,12 @@ function isLowerCase(str) {
 contactForm.addEventListener('submit', (event) => {
   const mail = inpMail.value;
 
-  if (isLowerCase(mail) === false) {
+  if (isLowerCase(mail) === true) {
+    contactForm.submit();
+  } else {
     event.preventDefault();
     event.stopPropagation();
     liErr.innerHTML = 'Please ensure your email is all lowercase.';
-  } else {
-    contactForm.submit();
-    liErr.innerHTML = 'Submitted successfully.';
   }
 });
 
