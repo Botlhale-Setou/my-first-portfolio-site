@@ -16,10 +16,10 @@ const inpMail = document.querySelector('#mail');
 const liErr = document.querySelector('#err');
 
 const modalContent = {
-  name: 'Multi-Post Stories',
+  name: 'Awesome Books Website',
   description:
-    'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
-  image: './media/popup_img.png',
+    'A webapp that keeps track of your list of awesome books. You\'re able to add and remove books as you like. We also made use of local storage to keep of your list even when you reload the page!',
+  image: './artwork/projects/awesomebooks.png',
   technologies: ['HTML', 'CSS', 'Bootstrap', 'Ruby on Rails'],
   liveLink: '#',
   srcLink: '#',
